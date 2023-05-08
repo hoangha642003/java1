@@ -1,0 +1,30 @@
+First_Number =3;
+Second_Number =5;
+Fizz="Fizz"
+Buzz="Buzz"
+Fizz_Buzz="FizzBuzz"
+
+let n=100
+function renderFizzBuzzStringUserFor(){
+for(let index =1 ; index <= n ; index++)
+{
+  let meesager=index
+  
+let divForFirstNumBer = index % First_Number;
+let divForSecondNumBer = index % Second_Number
+if(divForFirstNumBer==0 && divForSecondNumBer==0){
+  meesager= Fizz_Buzz
+
+}else if(divForFirstNumBer==0){
+  meesager=Fizz
+}else if (divForSecondNumBer==0){
+  meesager= Buzz
+}
+document.write(`${meesager}</br>`)
+
+}
+
+
+
+}
+renderFizzBuzzStringUserFor()
